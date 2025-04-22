@@ -1,19 +1,22 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-cheerio",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node for HTML parsing using Cheerio",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "cheerio",
+    "html",
+    "parsing"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/deepaghera/n8n-nodes-cheerio",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Deep Aghera",
+    "email": "deep@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/deepaghera/n8n-nodes-cheerio.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -35,13 +38,8 @@
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
-    ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/Cheerio/Cheerio.node.js"
     ]
   },
   "devDependencies": {
@@ -54,5 +52,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
   }
 }
